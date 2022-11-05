@@ -117,7 +117,7 @@ end
 
 xi.job_utils.dark_knight.useWeaponBash = function(player, target, ability)
     -- Applying Weapon Bash stun. Rate is said to be near 100%, so let's say 99%.
-    if (math.random()*100 < 99) then
+    if (math.random() * 100 < 99) then
         target:addStatusEffect(xi.effect.STUN, 1, 0, 6)
     end
 
